@@ -1,28 +1,32 @@
 
-# MobileTask Manager - Projet React Native
+# MobileTask Manager
 
 ## Présentation
 
-MobileTask Manager est une application mobile réalisée avec React Native et Expo.
-Le projet couvre les notions importantes vues en cours :
+Ce projet a été réalisé en React Native avec Expo dans le cadre du cours de développement mobile.
 
-- JSX
-- Composants React
-- Props
-- useState
-- useEffect
-- Navigation entre écrans
-- React Context
-- Requêtes HTTP avec fetch
-- Redux Toolkit
-- Styles et Flexbox
+L’objectif était de mettre en pratique les notions vues pendant le cours comme :
+- les composants React,
+- les props,
+- les hooks useState et useEffect,
+- la navigation entre plusieurs écrans,
+- React Context,
+- Redux Toolkit,
+- les requêtes HTTP,
+- ainsi que le style avec Flexbox.
 
-L'application permet :
-- d'ajouter des tâches,
-- de consulter une liste de tâches,
-- de récupérer des utilisateurs depuis une API,
-- de gérer un thème global avec Context,
-- de gérer les tâches avec Redux.
+L’application permet principalement de gérer des tâches et d’afficher des données récupérées depuis une API.
+
+---
+
+## Fonctionnalités
+
+- ajout de tâches,
+- suppression de tâches,
+- affichage d’une liste dynamique,
+- récupération des utilisateurs depuis une API,
+- changement de thème avec Context API,
+- gestion globale des données avec Redux.
 
 ---
 
@@ -36,79 +40,42 @@ L'application permet :
 
 ---
 
-## Installation
+## Installation du projet
 
-### 1. Cloner le projet
+### Installer les dépendances
 
-```bash
-git clone <LIEN_DU_REPOSITORY>
-cd mobiletask-manager
-```
+bash npm install 
 
-### 2. Installer les dépendances
+### Lancer le projet
 
-```bash
-npm install
-```
+bash npx expo start 
 
-### 3. Lancer le projet
-
-```bash
-npx expo start
-```
-
-Scanner ensuite le QR Code avec Expo Go.
+Ensuite il suffit de scanner le QR Code avec Expo Go sur téléphone.
 
 ---
 
-## Dépendances à installer
+## Dépendances principales
 
-```bash
-npm install @react-navigation/native
-npm install @react-navigation/native-stack
-npm install react-redux @reduxjs/toolkit
+bash npm install @react-navigation/native npm install @react-navigation/native-stack npm install react-redux @reduxjs/toolkit 
 
-npx expo install react-native-screens react-native-safe-area-context
-```
+bash npx expo install react-native-screens react-native-safe-area-context 
 
 ---
 
 ## Structure du projet
 
-```text
-mobiletask-manager/
-├── App.js
-├── screens/
-├── components/
-├── context/
-├── redux/
-└── package.json
-```
+text mobiletask-manager/ ├── App.js ├── screens/ ├── context/ ├── redux/ ├── README.md └── package.json 
 
 ---
 
-## Fonctionnalités principales
+## API utilisée
 
-### Accueil
-Écran principal avec navigation vers les autres pages.
+Les utilisateurs sont récupérés avec l’API :
 
-### Gestion des tâches
-- ajout d'une tâche,
-- affichage dynamique,
-- suppression.
-
-### API Utilisateurs
-Récupération de données depuis :
 https://jsonplaceholder.typicode.com/users
-
-### Thème global
-Utilisation de React Context pour changer le thème.
-
-### Redux
-Gestion centralisée des tâches.
 
 ---
 
 ## Auteur
 
-Projet académique réalisé dans le cadre du cours de Développement Mobile avec React Native.
+Projet réalisé dans le cadre du cours de Développement Mobile avec React Native.
