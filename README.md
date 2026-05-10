@@ -42,8 +42,8 @@ L'application permet :
 ### 1. Cloner le projet
 
 ```bash
-git clone <LIEN_DU_REPOSITORY>
-cd mobiletask-manager
+git clone https://github.com/Bodo-am/ProjetReactNative_AKA.git
+cd ProjetReactNative_AKA
 ```
 
 ### 2. Installer les dépendances
